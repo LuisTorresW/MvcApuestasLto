@@ -29,7 +29,7 @@ namespace MvcApuestasLto.Models
 
         public int Golesequipolocal { get; set; }
 
-        [Column("GOLESEQUIPOVISITANTE ")]
+        [Column("GOLESEQUIPOVISITANTE")]
 
         public int GolesEquipoVisitante { get; set; }
     }
