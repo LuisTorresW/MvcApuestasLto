@@ -59,7 +59,16 @@
                 @Html.DisplayFor(modelItem => item.Pais)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdEquipo)
+                @if (item.IdEquipo == 1)
+                {
+
+
+                    <span>Real Madrid</span>
+                }
+                else if (item.IdEquipo == 2)
+                {
+                    <span>Manchester</span>
+                }
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

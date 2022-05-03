@@ -43,10 +43,29 @@
                 @Html.DisplayFor(modelItem => item.Usuario)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdEquipolocal)
+               @if (item.IdEquipolocal == 1)
+                {
+
+
+<span>Real Madrid</span>
+                }
+                else if (item.IdEquipolocal==2)
+                {
+                   <span>Manchester</span>
+                }
+                
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdEquipovisitante)
+                @if (item.IdEquipovisitante == 1)
+                {
+
+
+                    <span>Real Madrid</span>
+                }
+                else if (item.IdEquipovisitante == 2)
+                {
+                    <span>Manchester</span>
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Golesequipolocal)
